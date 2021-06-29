@@ -24,8 +24,8 @@ register_()
 ```
 <br>
 실험과 관련한 포스트는 [이곳에서](https://www.notion.so/SS-OD-Unbiased-Teacher-c5f85aec178a48bf98a8bcac15e6ff71) 확인이 가능하다.
-[이곳에서](https://www.notion.so/SS-OD-Unbiased-Teacher-c5f85aec178a48bf98a8bcac15e6ff71)
-[arXiv](https://arxiv.org/abs/2102.09480)
+[[이곳에서](https://www.notion.so/SS-OD-Unbiased-Teacher-c5f85aec178a48bf98a8bcac15e6ff71)]
+[[arXiv](https://arxiv.org/abs/2102.09480)]
 <br>
 
 <img src="teaser/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
