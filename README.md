@@ -8,6 +8,21 @@ Unbised Teacher for Semi-Supervised Object Detection이라는 논문의 코드�
 - 실험 결과 각 라벨링 비율 별, 지도학습보다 준지도학습의 성능이 더 높게 나왔으며,<br> 50%의 label을 사용했을 때에는 전체를 사용하여 지도학습 한 결과와 크게 차이가 나지 않았다.(mAP 기준 2)<br>
 - 하지만 실험 모델은 Faster R-CNN이며, EfficientDet이나 다른 SOTA모델로 성능 측정을 해보아야 좀 더 효율성을 확인할 수 있을 것으로 기대된다. <br> 본 코드는 Detectron2를 토대로 구축되었으며, Detectron2에서 EfficientDet과 같은 모델을 구현한다면 본 코드에서도 사용이 가능할 것으로 예상된다.<br><br>
 
+* Multi GPU + Custom Dataset 환경 구축
+```
+vi /workspace/unbiased-teacher/detectron2/data/catalog.py
+
+#custom dataset 정의
+def register_() 정의
+
+:q!
+
+vi /workspace/unbiased-teacher/detectron2/data/build.py
+
+#custom dataset 정의 부분 호출
+register_()
+```
+
 <img src="teaser/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is the PyTorch implementation of our paper: <br>
