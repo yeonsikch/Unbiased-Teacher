@@ -1,5 +1,13 @@
 # Unbiased Teacher for Semi-Supervised Object Detection
 
+Unbised Teacher for Semi-Supervised Object Detection이라는 논문의 코드를 가져와 커스텀데이터셋에 대하여 학습할 수 있도록 수정한 코드이다.<br>
+기 코드에서 수정할 부분이 다소 있었으며, `train_net.py` 파일의 `register()` 부분에서 train, val 부분을 수정한다면 커스텀데이터셋을 통하여 학습할 수 있다.<br>
+학습 포맷은 coco format이며, 병렬학습을 지원한다.<br>
+단, 아직은 Inference 부분이 구현되어있지 않으나 곧 지원될 것으로 보인다.<br>
+<br>
+- 실험 결과 각 라벨링 비율 별, 지도학습보다 준지도학습의 성능이 더 높게 나왔으며,<br> 50%의 label을 사용했을 때에는 전체를 사용하여 지도학습 한 결과와 크게 차이가 나지 않았다.(mAP 기준 2)<br>
+- 하지만 실험 모델은 Faster R-CNN이며, EfficientDet이나 다른 SOTA모델로 성능 측정을 해보아야 좀 더 효율성을 확인할 수 있을 것으로 기대된다. <br> 본 코드는 Detectron2를 토대로 구축되었으며, Detectron2에서 EfficientDet과 같은 모델을 구현한다면 본 코드에서도 사용이 가능할 것으로 예상된다.<br><br>
+
 <img src="teaser/pytorch-logo-dark.png" width="10%"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is the PyTorch implementation of our paper: <br>
